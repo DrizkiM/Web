@@ -8,13 +8,11 @@
 			foreach ($urls as $url) {
 				if ( in_array($page, $url) ) {
 					include_once 'materi/'.$url["url"];
-				}else{
-					// echo "tidak ada";
 				}
 			}
 		}
 	}else{
-		// include_once '../HTML/Pertemuan 1/index.html';
+		include_once 'materi/html/perkenalan.html';
 	}
 
 

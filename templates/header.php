@@ -8,8 +8,13 @@
 				<a href="#">Html</a>
 				<ul class="dpHtml">
 					<li><a href="index.php?page=perkenalan">Pengenalan</a></li>
-					<li><a href="index.php?page=setting">Settingan</a></li>
-					<li><a href="index.php?page=pertemuan3">Latihan</a></li>
+					<li><a href="index.php?page=htmlTag">Tag,Element & Komentar</a></li>
+					<li><a href="index.php?page=htmlHeader">Judul & Formatting Teks</a></li>
+					<li><a href="index.php?page=htmlAttr">Attribute,link,List & Tabel</a></li>
+					<li><a href="index.php?page=htmlMedia">Html Media</a></li>
+					<li><a href="index.php?page=htmlFormulir">Html Formulir</a></li>
+					<li class="menu_tambahan"><a href="index.php?page=semanticTag">Semantic Tag</a></li>
+					<li class="menu_tambahan"><a href="index.php?page=htmlViewport">Viewport</a></li>
 				</ul>
 			</li>
 			<li class="css">
