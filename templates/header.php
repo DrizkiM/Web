@@ -4,9 +4,9 @@
 	</section>
 	<nav>
 		<ul>
-			<li class="html">
+			<li class="dropdown">
 				<a href="#">Html</a>
-				<ul class="dpHtml">
+				<ul class="dropdownList">
 					<li><a href="index.php?page=perkenalan">Pengenalan</a></li>
 					<li><a href="index.php?page=htmlTag">Tag,Element & Komentar</a></li>
 					<li><a href="index.php?page=htmlHeader">Judul & Formatting Teks</a></li>
@@ -15,23 +15,25 @@
 					<li><a href="index.php?page=htmlFormulir">Html Formulir</a></li>
 					<li class="menu_tambahan"><a href="index.php?page=semanticTag">Semantic Tag</a></li>
 					<li class="menu_tambahan"><a href="index.php?page=htmlViewport">Viewport</a></li>
+					<li class="menu_tambahan"><a href="index.php?page=htmlLink">Html Link</a></li>
+					<li class="menu_tambahan"><a href="index.php?page=htmlScript">Html Script</a></li>
 				</ul>
 			</li>
-			<li class="css">
+			<li class="dropdown">
 				<a href="#">CSS</a>
-				<ul class="dpCSS">
+				<ul class="dropdownList">
 					<li><a href="index.php?page=cssDasar">Perkenalan</a></li>
 				</ul>
 			</li>
-			<li class="js">
+			<li class="dropdown">
 				<a href="#">Javascript</a>
-				<ul class="dpJS">
+				<ul class="dropdownList">
 					<li><a href="#">Perkenalan</a></li>
 				</ul>
 			</li>
-			<li class="php">
+			<li class="dropdown">
 				<a href="#">Php</a>
-				<ul class="dpPHP">
+				<ul class="dropdownList">
 					<li><a href="#">Perkenalan</a></li>
 				</ul>
 			</li>

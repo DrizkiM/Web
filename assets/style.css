@@ -8,7 +8,7 @@ body{
 }
 #header{ 
 	width: 20%;
-	background-color: cornflowerblue;
+	background-color: #222831;
 	position: sticky;
 	top: 0;
 	left: 0;
@@ -22,27 +22,32 @@ body{
 #header>section{
 	padding: 20px;
 }
-#header nav ul{
+#header ul{
 	margin: 0;
-	padding: 0;
+	padding: 15px;
+	list-style-type: none;
 }
 #header li a{ 
 	text-decoration: none;
 	color: white;
 	display: block;
-	padding: 15px;
+	padding: 12px;
 }
-#header li a:hover{ background-color: #b0b0f28f; }
-.dpHtml, .dpCSS, .dpJS, .dpPHP{ display: none; }
-.dpHtml li a{
-	padding-left: 30px !important;
+#header nav .dropdownList { padding-right: 0; }
+#header li a:hover{ 
+	background-color: #40454d; 
+	border-radius: 5px;
 }
+.dropdownList{ display: none; }
 main{ 
 	width: 80%;
 	padding: 0 25px;
+	color: #233047;
+	background-color: rgba(13, 13, 13, 0.08)
 }
 .syntax{
 	overflow: auto !important;
+	border-radius: 5px;
 }
 .image_contoh{
 	display: block;
@@ -50,21 +55,22 @@ main{
 	width: 50%;
 }
 footer{
-	/*padding: 10px;*/
+	padding-top: 10px;
+	text-align: right;
 }
 /*class tambahan*/
 .show{ display: block !important; }
 @media screen and (min-width: 1000px){
 
 }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
 	#header{ width: 30%; }
 	main{ 
 		width: 70%; 
 		padding: 0 20px;
 	}
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 576px){
 	body{
 		direction: flex;
 		flex-direction: column;
@@ -80,3 +86,4 @@ footer{
 	main{ width: 100%; }
 	.image_contoh{ width: 100%; }
 }
+

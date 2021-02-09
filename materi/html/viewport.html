@@ -1,3 +1,44 @@
 <article>
-	<p>Hello world</p>
+	<h2>Viewport</h2>
+	<p>
+		Viewport adalah area yang akan terlihat oleh user baik dari desktop,tablet dan mobile,viewport sendiri digunakan untuk mendesain tampilan menjadi responive artinya tampilan web akan terlihat bagus baik dari tampilan desktip,tablet dan mobile. 
+	</p>
+	<pre class="syntax"><code data-language="html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</code></pre>
+	<ul>
+		<li>
+			<code>widht=device-width</code> : digunakan untuk mengatur lebar web mengikuti layar perangkat yang sedang digunakan.
+		</li>
+		<li>
+			<code>intial-scale=1</code> ; artinya web akan memberikan zoom menjadi normal
+		</li>
+	</ul>
+	<p>Viewport biasanya digunakan dengan css <code>@media</code></p>
+	<pre class="syntax"><code data-language="html">@media screen and ([min-width|max-width: ] [ukuran]){
+ ..perintah yang diterapkan..
+}</code></pre>
+	<p>Untuk mencoba responsive web kita menggunakan developer tools</p>
+	<ul>
+		<li>Mozila dengan menekan tombol <code>ctrl+shift+m</code></li>
+		<li>Chrome dengan menekan tombol <code>f12</code> lalu memilih icon handphone</li>
+	</ul>
+	<p>Contoh penggunaan <code>media</code> query beserta <code>viewport</code></p>
+	<pre class="syntax"><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+ &lt;title&gt;Testing&lt;/title&gt;
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+	<pre class="syntax"><code data-language="css">@media screen and (min-width: 960px){
+	body{ background-color: lightblue; }
+}
+@media screen and (max-width: 960px){
+	body{ background-color: lightgreen; }
+}
+@media screen and (max-width: 450px){
+	body{ background-color: yellow; }
+}</code></pre>
 </article>

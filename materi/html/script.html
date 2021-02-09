@@ -1,0 +1,31 @@
+<article>
+	<h2>Tag script</h2>
+	<p>Tag yang berfungsi menuliskan script contohnya Javascript ataupun untuk menyambung dengan file yang berada diluar (eksternal).</p>
+	<ul>
+		<li>script ditempatkan di antara tag <code>body</code> atupun juga di antara <code>head</code></li>
+		<li>script biasa digunakan untuk memasukan file .js yang berada di folder lain</li>
+		<li>script biasa digunakan untuk menuliskan script lain di dokumen html</li>
+	</ul>
+	<p>Format Penulisan</p>
+	<pre class="syntax"><code data-language="html">&lt;script type=&quot;tipe file&quot; src=&quot;lokasi file&quot;&gt;&lt;/script&gt;</code></pre>
+	<ul>
+		<li><code>type</code> : digunakan untuk menentukan tipe file yang akan kita tulis bisa javascript atau bahasa pemrograman lain</li>
+		<li><code>src</code> : digunakan untuk menentukan lokasi file yang akan di panggil</li>
+	</ul>
+	<p>contoh Penggunaan tag <code>script</code></p>
+	<pre class="syntax"><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+ &lt;title&gt; testing script &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+ &lt;script type=&quot;text/javascript&quot;&gt;
+ let kotak = document.querySelector(&#39;.box&#39;);
+ kotak.addEventListener(&#39;click&#39;,function(){
+  alert(&#39;Hello world&#39;);
+ });
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</article>

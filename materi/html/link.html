@@ -1,0 +1,31 @@
+<article>
+	<h2>Tag Link</h2>
+	<p>Tag yang berfungsi untuk mengubungkan dokumen HTML dengan file yang berada diluar (eksternal).</p>
+	<ul>
+		<li>Link ditempatkan di antara tag <code>head</code></li>
+		<li>Link biasa digunakan untuk memasukan file .css yang berada di folder lain</li>
+	</ul>
+	<p>Format Penulisan</p>
+	<pre class="syntax"><code data-language="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;file-tujuan.format&quot;&gt;</code></pre>
+	<ul>
+		<li><code>rel</code> : digunakan untuk menentukan hubungan antara dokumen asal yang berkaitan dengan file tujuan</li>
+		<li><code>href</code> : digunakan untuk menentukan lokasi file yang akan di panggil</li>
+	</ul>
+	<p>contoh Penggunaan tag <code>link</code></p>
+	<pre class="syntax"><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+ &lt;title&gt; testing link &lt;/title&gt;
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+	<pre class="syntax"><code data-language="css">/*file eksternal style.css*
+.box{
+ width: 300px;
+ height: 300px;
+ background-color: lightblue;
+}</code></pre>
+</article>

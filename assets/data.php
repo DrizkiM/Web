@@ -33,6 +33,14 @@ $urls = [
 		"url" => "html/viewport.html"
 	],
 	[
+		"title" => "htmlLink",
+		"url" => "html/link.html"
+	],
+	[
+		"title" => "htmlScript",
+		"url" => "html/script.html"
+	],
+	[
 		"title" => "cssDasar",
 		"url" => "css/cssDasar.html"
 	]

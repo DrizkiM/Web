@@ -1,5 +1,5 @@
 <footer>
 	<p>
-		Copyright; Dimas Rizki Mahendra
+		&#169; Dimas Rizki Mahendra
 	</p>
 </footer>

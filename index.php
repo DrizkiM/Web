@@ -21,5 +21,6 @@
 	<script type="text/javascript" src="assets/rainbow-master/src/language/generic.js"></script>
 	<script type="text/javascript" src="assets/rainbow-master/src/language/html.js"></script>
 	<script type="text/javascript" src="assets/rainbow-master/src/language/css.js"></script>
+	<script type="text/javascript" src="assets/rainbow-master/src/language/javascript.js"></script>
 </body>
 </html>
