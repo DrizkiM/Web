@@ -16,11 +16,6 @@
 	<pre class="syntax"><code data-language="html">@media screen and ([min-width|max-width: ] [ukuran]){
  ..perintah yang diterapkan..
 }</code></pre>
-	<p>Untuk mencoba responsive web kita menggunakan developer tools</p>
-	<ul>
-		<li>Mozila dengan menekan tombol <code>ctrl+shift+m</code></li>
-		<li>Chrome dengan menekan tombol <code>f12</code> lalu memilih icon handphone</li>
-	</ul>
 	<p>Contoh penggunaan <code>media</code> query beserta <code>viewport</code></p>
 	<pre class="syntax"><code data-language="html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -32,6 +27,10 @@
 
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+	<h3>Breakpoint</h3>
+	<p>
+		Breakpoint adalah ruleset CSS untuk memisahkan antara ukuran layar,dibawah ini adalah rulset untuk ukuran web,tablet serta mobile
+	</p>
 	<pre class="syntax"><code data-language="css">@media screen and (min-width: 960px){
 	body{ background-color: lightblue; }
 }
@@ -41,4 +40,9 @@
 @media screen and (max-width: 450px){
 	body{ background-color: yellow; }
 }</code></pre>
+	<p>Untuk mencoba responsive web kita menggunakan developer tools</p>
+	<ul>
+		<li>Mozila dengan menekan tombol <code>ctrl+shift+m</code></li>
+		<li>Chrome dengan menekan tombol <code>f12</code> lalu memilih icon handphone</li>
+	</ul>
 </article>

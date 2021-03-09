@@ -1,0 +1,160 @@
+<article>
+	<section>
+		<h2>CSS Layouting - Float</h2>
+		<p>Float adalah properti css yang akan membuat sebuah element berada di kiri ataupun kanan.</p>
+		<img src="assets/img/float.png" alt="penjelasan float" class="image_contoh">
+		<pre class="syntax"><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Float&lt;/title&gt;
+&lt;style&gt;
+.container{
+	margin: 0 auto;
+	max-width: 800px;
+	/*edit disini*/
+	height: 500px;
+	border: 2px solid black;
+}
+.kotak{
+	width: 200px;
+	height: 200px;
+	background-color: lightblue;
+	float: right;
+}
+/*edit disini*/
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;kotak&quot;&gt;&lt;/div&gt;
+&lt;!-- edit disini --&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+		<p>Float biasa digunakan untuk membuat layouting sebuah website,karena mudah dipahami karena hanya memberi nilai left dan right pada sebuah element.</p>
+		<img src="assets/img/float-layouting.png" alt="contoh layouting" class="image_contoh">
+
+	</section>
+	<section>
+		<h2>Masalah pada Float</h2>
+		<img src="assets/img/float-problem.png" alt="masalah float" class="image_contoh">
+		<p>
+			masalah pada float biasa terjadi karena element container(pembungkus) akan menggangap element di dalamnya yang menerapkan float dianggap tidak ada,terdapat 3 cara untuk mengatasi permasalahan ini
+		</p>
+		<ol>
+			<li>Clear</li>
+			<li>overflow</li>
+			<li>micro clearfix</li>
+		</ol>
+	</section>
+	<section>
+		<h3>Clear</h3>
+		<p>Untuk menerapkan metode clear dengan cara menambahkan <code>div</code> setelah element yang menerapkan float dengan attribute class <code>clear</code> </p>
+		<pre class="syntax"><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Float&lt;/title&gt;
+&lt;style&gt;
+.container{
+	margin: 0 auto;
+	max-width: 800px;
+	/*edit disini*/
+	/*height: 500px;*/
+	border: 2px solid black;
+}
+.kotak{
+	width: 30%;
+	height: 200px;
+	background-color: lightblue;
+	float: right;
+}
+/*edit disini*/
+.clear{
+	clear: right;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;kotak&quot;&gt;&lt;/div&gt;
+&lt;!-- edit disini --&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+	</section>
+	<section>
+		<h3>overflow</h3>
+		<p>Untuk menerapkan metode overflow dapat menambahkan property <code>overflow : auto</code> di container(pembungkus) element yang di telah menerapkan <code>float</code></p>
+		<pre class="syntax"><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Float&lt;/title&gt;
+&lt;style&gt;
+.container{
+	margin: 0 auto;
+	max-width: 800px;
+	/*edit disini*/
+	/*height: 500px;*/
+	overflow: auto;
+	border: 2px solid black;
+}
+.kotak{
+	width: 30%;
+	height: 200px;
+	background-color: lightblue;
+	float: right;
+}
+/*edit disini*/
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;kotak&quot;&gt;&lt;/div&gt;
+&lt;!-- edit disini --&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+	</section>
+	<section>
+		<h3>Micro clearfix</h3>
+		<p>Micro clearfix metode yang ditemukan oleh <i>Nicolas Gallagher</i> untuk memperbaiki masalah dalam menerapkan float,dengan metode ini kita hanya cukup memberi attribute class <code>cf</code> di container(pembungkus).</p>
+		<pre class="syntax"><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Float&lt;/title&gt;
+&lt;style&gt;
+.container{
+	margin: 0 auto;
+	max-width: 800px;
+	/*edit disini*/
+	/*height: 500px;*/
+	border: 2px solid black;
+}
+.kotak{
+	width: 30%;
+	height: 200px;
+	background-color: lightblue;
+	float: right;
+}
+/*edit disini*/
+.cf:before,
+.cf:after {
+    content: &quot; &quot;; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;container cf&quot;&gt;
+&lt;div class=&quot;kotak&quot;&gt;&lt;/div&gt;
+&lt;!-- edit disini --&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+	</section>
+</article>

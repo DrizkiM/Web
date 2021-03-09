@@ -1,0 +1,66 @@
+<article>
+	<h2>Selector</h2>
+	<p>Selector di perkenalan CSS telah dijelaskan digunakan untuk menjadi acuan style element tertentu pada html,selector terdapat berbagai macamnya diantara lain:</p>
+	<ol>
+		<li>Selector Tag (Type Selector)</li>
+		<li>Selector id atau class</li>
+		<li>Selector berdasarkan attribute dari suatu element</li>
+		<li>Selector Universal</li>
+	</ol>
+	<pre class="syntax"><code data-language="css">/*Seleksi berdasarkan tag html*/
+p {
+ color: grey;
+ font-size: 20px;
+}
+/*Seleksi berdasarkan id atau class*/
+#test{ /*berdasarkan id*/
+ background-color: yellow;
+ margin: 10px;
+ padding: 5px;
+}
+.kotak{ /*berdasarkan class*/
+ border: 1px solid black;
+ padding: 5px;
+}
+/*Seleksi type dari suatu element*/
+input[type="text"]{
+ padding: 20px !important;
+}
+/*Seleksi type dari suatu element*/
+*{
+ border-box: box-sizing;
+}</code></pre>
+	<section>
+		<h3>Tag Selector</h3>
+		<p>Tag selector menggunakan element html sebagai selectornya,ketika terdapat element yang sama pada html maka akan terkena style yang di terapkan</p>
+	</section>
+	<section>
+		<h3>Class Selector</h3>
+		<p>Class selector menargetkan style berdasarkan attribute class yang ada pada element html,untuk menuliskan intruksi di css menggunakan tanda <code>.</code> lalu di ikuti dengan nama dari classnya</p>
+	</section>
+	<section>
+		<h3>Id Selector</h3>
+		<p>Sama seprti class selector,Id Selector menargetkan style berdasarkan attribute id yang ada pada element html,untuk menuliskan intruksi di css menggunakan tanda <code>#</code> lalu di ikuti dengan nama dari idnya</p>
+	</section>
+</article>
+<article>
+	<h2>Pseudo Selector</h2>
+	<section>
+		<h3>Pseudo-class</h3>
+		<p>Pseudo-class adalah selector yang menargetkan element yang "tidak terlihat" contohnya seperti sifat element,untuk mengaksesnya menggunakan selector khusus yaitu <code>:</code> setelah kita membuat selector</p>
+		<pre class="syntax"><code data-language="css">a:hover{
+ color: orange;
+}</code></pre>
+		<p>pseudo-class diatas akan menghasilkan hasil dibawah ini,ketika element a di sorot menggunakan cursor maka akan berubah warna menjadi orange</p>
+		<div class="testingCode">
+			<a href="#">Testing</a>
+		</div>
+	</section>
+<!-- 	<section>
+		<h3>Pseudo-element</h3>
+		<p>Pseudo-element adalah akan menyeleksi ‘potongan’ tag atau mengakses sebuah elemen yang sebelumnya tidak ada.</p>
+	</section> -->
+	<section class="tugas">
+		Buatlah file html yang menerapkan penginputan file css(internal/eksternal) lalu minimal terdapat 1 buah pseudo-class
+	</section>
+</article>

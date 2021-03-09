@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing js</title>
+	<style>
+		.kotak{
+			margin: 0 auto;
+			max-width: 200px;
+			height: 200px;
+			line-height: 200px;
+			text-align: center;
+			color: white;
+		}
+	</style>
+	<!-- <script>
+		let test = document.querySelector('.kotak');
+		console.log(test);
+	</script> -->
+</head>
+<body>
+	<div class="kotak" onclick="changeColor(this)" style="background-color: red;">
+		<p>Tekan saya,untuk merubah warna</p>
+	</div>
+
+	<script>
+		function changeColor(e) {
+			const collorNow = e.style.backgroundColor;
+			// console.log(collorNow);
+			if (collorNow=="red") {
+				e.style.backgroundColor = "green";
+			}else{
+				e.style.backgroundColor = "red";
+			}
+		}
+	</script>
+</body>
+</html>

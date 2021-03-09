@@ -1,0 +1,56 @@
+<article>
+	<h2>Border</h2>
+	<p>
+		Border adalah garis yang mengelilingi padding beserta content,border biasanya tidak terlihat namun kita dapat mengaturnya dengan property <code>border: width type warna;</code>
+	</p>
+	<img src="assets/img/margin.jpg" alt="penjelasan border" class="image_contoh">
+	<h3>Menentukan nilai ketebalan border</h3>
+	<p>sama seperti padding,kita dapat menentukan nilai border berdasarkan sisi dari suatu element: </p>
+	<ul>
+		<li>border-top-width : nilai</li>
+		<li>border-right-width : nilai</li>
+		<li>border-bottom-width : nilai</li>
+		<li>border-left-width : nilai</li>
+	</ul>
+	<p>Ataupun dapat menggunakan short-hand dari property<code>border-width: top right bottom left</code></p>
+	<h3>Menentukan style dari border</h3>
+	<p>Kita dapat menerpakan style dari border dengan <code>border-style: style;</code> ,terdapat beberapa style diantaranya: </p>
+	<ul>
+		<li>solid   Tipe garis lurus atau tidak terputus - putus)</li>
+		<li>dotted  Garis yang dibentuk dari titik-titik</li>
+		<li>dashed  Garis yang dibentuk dari serangkaian garis pendek.</li>
+		<li>groove  Tipe garis yang berbentuk seperti frame</li>
+		<li>hidden  Digunakan untuk menyembunyikan garis pada elemen</li>
+	</ul>
+	<h3>Menentukan warna dari border</h3>
+	<ul>
+		<li>border-top-color : nilai</li>
+		<li>border-right-color : nilai</li>
+		<li>border-bottom-color : nilai</li>
+		<li>border-left-color : nilai</li>
+	</ul>
+	<p>Sama seperti value yang lain kita dapat mensetting warna baik secara individu ataupun mengunakan short-hand <code>border-color: warna-atas warna-kanan warna-bawah warna-kiri</code></p>
+	<img src="assets/img/ss_border.png" alt="contoh border" class="image_contoh">
+	<pre class="code"><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Border&lt;/title&gt;
+&lt;style&gt;
+	.box{
+		padding: 20px;
+		border: 1px dotted red;
+		
+		/*hidup/matikan komentar untuk melihat style*/
+	/*	border-width: 5px 4px 3px 2px;
+		border-style: solid;
+		border-color: red black blue yellow;*/
+	}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;box&quot;&gt;
+	&lt;p&gt;Hello World&lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</article>

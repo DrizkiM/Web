@@ -1,5 +1,5 @@
 <?php 
-	include_once 'assets/data.php';
+	require_once 'assets/data.php';
 	if ( isset($_GET["page"])) {
 		$page = $_GET["page"];
 		if ( preg_match('~\W~', $page)) {
@@ -14,5 +14,3 @@
 	}else{
 		include_once 'materi/html/perkenalan.html';
 	}
-
-

@@ -1,0 +1,52 @@
+<article>
+	<section>
+		<h2>Penulisan Code Javascript</h2>
+		<p>Untuk menuliskan code Js dapat menggunakan tag <code>script</code></p>
+		<pre class="syntax"><code data-language="javascript">&lt;script type=&quot;text/javascript&quot;&gt;
+ document.write(&quot;Hello World&quot;);
+&lt;/script&gt;</code></pre>
+	</section>
+	<section>
+		<h3>Dimana kita memasukan file Javascript?</h3>
+		<ol>
+			<li>Di antar tag <code>head</code></li>
+			<li>Di antara tag <code>body</code> -> khususnya di bagian bawah</li>
+		</ol>
+		<h3>Rekomendasi penyimpanan file</h3>
+		<p>Penyimpanan file yang paling ideal adalah diantar tag <code>body</code></p>
+		<h3>Perbedaan peletakan javascript</h3>
+		<p>Diantara tag <code>head</code></p>
+		<p>
+			Ketika kita meletakan di antara head,semua function yang telah di tuliskan dalaman kode
+			akan diload terlebih dahulu sebelum content page html,sehingga terkadang beberapa function akan tidak berfungsi.
+		</p>
+		<p>Diantara tag <code>body</code></p>
+		<p>
+			Namun,ketika menempatkan file diantara body maka semua content web page akan di load terlebih dahulu baru script javascript.
+		</p>
+	</section>
+	<section>
+		<h2>Memasukan file Javascript ke HTML</h2>
+		<p>Terdapat 2 cara memasukan/menuliskan file javascript,yaitu: </p>
+		<ul>
+			<li>Internal</li>
+			<li>Eskternal</li>
+		</ul>
+		<h3>Internal</h3>
+		<p>Internal Javascript berarti kita memasukan syntax didalam file html tepatnya di antara tag <code>head</code> atau <code>body</code> seperti yang dijelaskan materi diatas.
+		<h3>Eksternal</h3>
+		<p>Eksternal Javascript berarti kita memasukan syntax JS yang berbeda folder ke dalam file html dengan menggunakan tag <code>script</code> yang di tuliskan diantara tag <code>head</code> ataupun <code>body</code></p>
+		<pre class="syntax"><code data-language="javascript">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Input File Javascript Eksternal&lt;/title&gt;
+	&lt;!-- dapat di letakan disini,namun lebih ideal di antara tag body --&gt;
+	&lt;script src=&quot;file-tujuan.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+	&lt;script src=&quot;file-tujuan.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+	</section>
+</article>

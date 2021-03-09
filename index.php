@@ -12,7 +12,7 @@
 <body>
 	<?php include_once 'templates/header.php'; ?>
 	<main>
-		<?php include_once 'controllers/pages.php'; ?>
+		<?php require_once 'controllers/pages.php'; ?>
 		<?php include_once 'templates/footer.php'; ?>
 	</main>
 

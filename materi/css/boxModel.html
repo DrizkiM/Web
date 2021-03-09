@@ -1,0 +1,35 @@
+<article>
+	<section>
+		<h2>Boxmodel</h2>	
+		<p>Setiap element html diibaratkan adalah sebuah box atau kotak,seperti kotak pada umumnya pasti terdapat isi,tinggi,lebar,lapisan luar hingga jarak,Namun di Element Html kita menyebutnya padding,border,dan margin</p>
+		<img src="assets/img/margin.jpg" alt="penjelasan box model" class="image_contoh">
+		<ul>
+			<li>Content disini berarti isi dari sebuah element contohnya : text </li>
+			<li>Padding adalah lapisan yang memisahkan antara konten dengan border dari suatu element</li>
+			<li>Border adalah garis yang menyelimuti element tapi untuk tampilan awal border bersifat tidak terlihat atau 0</li>
+			<li>Margin adalah jarak terluar yang memisahkan antara element satu dengan yang lainnya</li>
+		</ul>
+		<p>Secara default sebuah box akan mengikuti ukuran dari sebuah kontent,namun kita dapat mengatur nilai dimensi dari box tersebut dengan properti width dan height untuk kita dapat menggunakan pixel, persentase dalam menentukan dimensi kotak </p>
+	</section>
+	<section>
+		<h2>Overflowing Content</h2>
+		<p>Adakalanya sebuah content akan melebihi panjang ataupun lebar dari sebuah box,untuk mengatasi itu di css terdapat sebuah properti yang bernama <code>overflow</code>,terdapat 4 macam value dari overflow diantaranya: </p>
+		<ul>
+			<li>visible : value default dimaan content akan di tampilkan walapun telah melebihi box </li>
+			<li>hidden : value yang akan menyembunyikan content yang telah melebihi box </li>
+			<li>scroll : value yang akan memunculkan scroll di pinggir box baik content melebihi box ataupun tidak</li>
+			<li>auto : value hanya akan memunculkan scroll ketika content melebihi box</li>
+		</ul>
+		<p>Contoh Overflowing Content</p>
+		<pre class="syntax"><code data-language="html"><div style="background-color: #d5cfcf; padding: 10px; height: 100px; overflow: scroll;">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores voluptatum doloremque, omnis laborum amet in, veniam enim laudantium vitae delectus commodi earum aliquam eveniet, ipsa distinctio libero porro quo blanditiis iure cupiditate iste optio voluptatibus facilis! Mollitia fuga eos quam ad perferendis. Ipsa quisquam minima, rerum qui nemo optio! Laboriosam.
+</div></code></pre>
+		<div class="testingCode" style="background-color: #d5cfcf; padding: 10px; height: 100px; overflow: scroll;">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ipsum aut, praesentium repellat numquam nesciunt excepturi, dicta quo laborum reprehenderit molestiae doloremque at. Atque magni nesciunt beatae in facilis commodi accusamus. Natus nihil saepe dolor ipsam dolores. Perferendis autem rerum, sunt ad quis dolore velit accusamus perspiciatis aspernatur, ipsam repellendus!</p>
+		</div>
+		<p>dari kode diatas kita sengaja menentukan tinggi dari element menjadi 50px agar content melebihi box,lalu kita menerapkan perintah overflow: scroll sehingga element akan menerapkan scrolling.</p>
+	</section>
+	<section class="tugas">
+		Pahami materi box model serta buat lah satu file tentang overflowing Content 
+	</section>
+</article>

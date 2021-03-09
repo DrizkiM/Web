@@ -1,0 +1,90 @@
+<article>
+	<section>
+		<h2>CSS Layouting - Positioning</h2>
+		<p>Property CSS<code>position</code> digunakan untuk mengatur posisi dari sebuah element html,terdapat 5 value dari properti <code>position</code> yaitu: </p>
+		<ol>
+			<li>static</li>
+			<li>relative</li>
+			<li>fixed</li>
+			<li>absolute</li>
+			<li>sticky</li>
+		</ol>
+		<p>Sebelum mempelajari positioning ada baiknya memahami bagaimana flow HTML itu sendiri,secara default flow HTMl bersifat <code>static</code> artinya flow normal dengan setiap element bertumpuk ke bawah, sedangkan untuk flow <code>non-static</code> akan keluar dari flow normal HTML.</p>
+		<p>beri contoh gambar</p>
+		<p>di dalam property CSS<code>position</code> dapat dikategorikan seperti ini</p>
+		<dl>
+			<dt>Properti yang berifat Static</dt>
+			<dd>static</dd>
+			<dt>Propertin yang bersifat non-static</dt>
+			<dd>relative</dd>
+			<dd>fixed</dd>
+			<dd>absolute</dd>
+			<dd>sticky</dd>
+		</dl>
+		<h3>non-static Flow</h3>
+		<p>Ketika kita membuat suatu element bersifat non-static maka kita akan membuka property baru yaitu: <code>top,left,right dan left</code> yang akan relative terhadap element pembungkus terdekat ataupun dengan browser.</p>
+	</section>
+	<section>
+		<h3>Static</h3>
+		<img src="assets/img/ss_static.jpg" alt="penjelasan static" class="image_contoh">
+		<p>Static adalah value default dari setiap element HTML,yang akan bertumpuk kebawah dan saling berkaitan satu sama lain.</p>
+		<p>Setiap element yang memiliki posisi static,maka setiap perubahan akan mempengaruhi element lainnya</p>
+		<img src="assets/img/ss_static_contoh.jpg" alt="contoh static" class="image_contoh">
+	</section>
+	<section>
+		<h3>Relative</h3>
+		<img src="assets/img/ss_relative.jpg" alt="penjelasan relative" class="image_contoh">
+		<p>Element yang kita posisikan relative diibaratkan keluar dari flow normal dan ketika kita mengatur element tersebut maka tidak akan mempengaruhi elemen sebelum/sesudahnya dengan menggunakan property <code>top,left,right,dan bottom</code>, namun tempat element dibuat masih dianggap ada oleh browser.</p>
+	</section>
+	<section>
+		<h3>Absolute</h3>
+		<img src="assets/img/ss_absolute.jpg" alt="penjelasan absolute" class="image_contoh">
+		<p>Element dilihat dari sisi 3D</p>
+		<img src="assets/img/ss_absolute_contoh.jpg" alt="contoh absolute" class="image_contoh">
+		<p>Sama halnya dengan posisi relative,perbedaan jelas adalah tempat awal element akan diangap tidak ada sehingga akan diisi oleh element selanjutnya untuk posisi absolute akan relatif terhadap element terdekatnya.</p>
+	</section>
+	<section>
+		<h3>Fixed</h3>
+		<img src="assets/img/ss_fixed.jpg" alt="penjelasan fixed" class="image_contoh">
+		<p>Seperti posisi absolute,fixed akan dianggap keluar dan akan relatif terhadap jendela browser sehingga ketika kita akan selalu melihat element tersebut di layar jendela browser kita.</p>
+		<p>Syntax gambar diatas</p>
+		<pre class="syntax"><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;testing&lt;/title&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+div{
+	margin: 0 auto;
+	height: 100000px;
+}
+.box{
+	width: 150px;
+	height: 150px;
+}
+.kotak1{ background-color: #009fd7; }
+.kotak2{ background-color: #46b749; }
+.kotak3{ 
+	background-color: #e91d2d;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div&gt;
+&lt;div class=&quot;box kotak1&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;box kotak2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;box kotak3&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+	</section>
+	<section>
+		<h3>Sticky</h3>
+		<img src="assets/img/sticky.gif" alt="penjelasan sticky" class="image_contoh">
+		<p>Posisi Sticky adalah posisi gabungan antara posisi relative dan fixed,dimana posisi akan tetap berada di tempat awalnya namun akan menempel terhadap browser ketika sampai di element tersebut karena itulah posisi ini memiliki sifat gabungan dari relative dan fixed.</p>
+		<p>Syntax code silahkan copy <a href="view-source:materi/css/sticky.html" target="_blank">disini</a></p>
+	</section>
+</article>

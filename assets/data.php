@@ -41,7 +41,63 @@ $urls = [
 		"url" => "html/script.html"
 	],
 	[
-		"title" => "cssDasar",
+		"title" => "cssIntro",
 		"url" => "css/cssDasar.html"
+	],
+	[
+		"title" => "cssPenulisan",
+		"url" => "css/inputfile.html"
+	],
+	[
+		"title" => "cssSelector",
+		"url" => "css/selector.html"
+	],
+	[
+		"title" => "fontStyle",
+		"url" => "css/fontstyle.html"
+	],
+	[
+		"title" => "boxModel",
+		"url" => "css/boxModel.html"
+	],
+	[
+		"title" => "margin",
+		"url" => "css/margin.html"
+	],
+	[
+		"title" => "padding",
+		"url" => "css/padding.html"
+	]
+	,[
+		"title" => "border",
+		"url" => "css/border.html"
+	],
+	[
+		"title" => "cssDisplay",
+		"url" => "css/display.html"
+	],
+	[
+		"title" => "position",
+		"url" => "css/position.html"
+	],
+	[
+		"title" => "float",
+		"url" => "css/float.html"
+	],
+	[
+		"title" => "flex",
+		"url" => "css/flex.html"
+	],
+	[
+		"title" => "jsIntro",
+		"url" => "javascript/perkenalan.html"
+	],
+	[
+		"title" => "jsPenulisan",
+		"url" => "javascript/inputfile.html"
+	],
+	[
+		"title" => "jsOutput",
+		"url" => "javascript/output.html"
 	]
 ];
