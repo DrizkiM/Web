@@ -99,5 +99,13 @@ $urls = [
 	[
 		"title" => "jsOutput",
 		"url" => "javascript/output.html"
+	],
+	[
+		"title" => "jsStatment",
+		"url" => "javascript/statment.html"
+	],
+	[
+		"title" => "jsComent",
+		"url" => "javascript/coment.html"
 	]
 ];

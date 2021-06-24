@@ -13,7 +13,7 @@
 	<?php include_once 'templates/header.php'; ?>
 	<main>
 		<?php require_once 'controllers/pages.php'; ?>
-		<?php include_once 'templates/footer.php'; ?>
+		<?php require_once 'templates/footer.php'; ?>
 	</main>
 
 	<script type="text/javascript" src="assets/script.js"></script>

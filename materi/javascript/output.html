@@ -1,3 +1,53 @@
 <article>
 	<h2>Menampilkan output</h2>
+	<p>
+		Menampilkan output sangat penting dalam javascript untuk melihat hasil dari code yang kita tuliskan,menampilkan output dalam javascript dapat menggunakan 4 cara yaitu:
+	</p>
+	<ul>
+		<li>Menggunakan Console</li>
+		<li>Menggunakan dialog pemberitahuan(alert)</li>
+		<li>Menuliskannya sebagai kontent di dalam Element</li>
+		<li>Menuliskan secara langsung di jendela browser</li>
+	</ul>
+	<section>
+		<h3>Console</h3>
+		<p>
+			setiap browser telah memiliki console tersendiri,untuk membukanya dengan menggunakan shorcut <code>ctrl+shift+k</code> untuk menampilkan output hasil dari code melalui console dapat menggunakan syntax <code>console.log([yang ingin ditampilkan])</code>.
+		</p>
+		<pre class="syntax"><code data-language="javascript">let a = 15,b = 5;
+let c = a+b;
+console.log(c);</code></pre>
+	</section>
+	<section>
+		<h3>Alert</h3>
+		<p>	Alert adalah popup,untuk menggunakan dapat menggunakan syntax <code>alert([yang ingin ditampilkan])</code>.</p>
+		<pre class="syntax"><code data-language="javascript">let a = 15,b = 5;
+let c = a+b;
+alert(c);</code></pre>
+		<button onclick="testingAlert()">hasil</button>
+	</section>
+	<section>
+		<h3>innerHTML</h3>
+		<p>
+			Untuk menuliskan hasil kedalam element HTML dapat menggunakan perintah yaitu <code>innerHTML</code>,namun untuk melakukan itu sebelumnya kita harus menseleksi terlebih dahulu element yang akan menampung nilai.
+		</p>
+		<pre class="syntax"><code data-language="javascript">const testingElement = document.getElementById('writeInElement');
+//komentar
+function writeInnerhtml() {
+ let testingWrite = document.getElementById('testWrite').value;
+ testingElement.innerHTML = testingWrite;
+}</code></pre>
+		<p id="writeInElement">Hasil muncul Disini</p>
+		<input type="text" id="testWrite">
+		<input type="submit" value="tekan" onclick="writeInnerhtml()">
+	</section>
+	<section>
+		<h3>document.write()</h3>
+		<p>
+			<code>document.write()</code> digunakan untuk menampilkan hasil ke dalam layar browser dan menghapus seluruh element HTML,oleh karena itu <code>document.write()</code> hanya digunakan untuk kepentingan debugging.
+		</p>
+		<pre class="syntax"><code data-language="javascript">let a = 15,b = 5;
+let c = a+b;
+document.write('testing');</code></pre>
+	</section>
 </article>

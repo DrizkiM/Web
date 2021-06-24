@@ -14,7 +14,7 @@
 					<li><a href="index.php?page=htmlMedia">Html Media</a></li>
 					<li><a href="index.php?page=htmlFormulir">Html Formulir</a></li>
 					<li class="menu_tambahan"><a href="index.php?page=semanticTag">Semantic Tag</a></li>
-					<li class="menu_tambahan"><a href="index.php?page=htmlViewport">Viewport</a></li>
+					<!-- <li class="menu_tambahan"><a href="index.php?page=htmlViewport">Viewport</a></li> -->
 					<li class="menu_tambahan"><a href="index.php?page=htmlLink">Html Link</a></li>
 					<li class="menu_tambahan"><a href="index.php?page=htmlScript">Html Script</a></li>
 				</ul>
@@ -42,6 +42,8 @@
 					<li><a href="index.php?page=jsIntro">Perkenalan</a></li>
 					<li><a href="index.php?page=jsPenulisan">Penulisan & Memasukan file JS</a></li>
 					<li><a href="index.php?page=jsOutput">Menampilkan Output</a></li>
+					<li><a href="index.php?page=jsStatment">Penulisan Statment JS</a></li>
+					<li><a href="index.php?page=jsComent">Javascript Komentar</a></li>
 				</ul>
 			</li>
 			<li class="dropdown">

@@ -6,3 +6,18 @@ for( let dropdownlist of dropdown ){
 		target.classList.toggle('show');
 	});
 }
+
+//script pembelajaran
+function testingAlert() {
+	let a = 10,b=5;
+	let c = a+b;
+
+	alert(c);
+}
+
+const testingElement = document.getElementById('writeInElement');
+
+function writeInnerhtml() {
+	let testingWrite = document.getElementById('testWrite').value;
+	testingElement.innerHTML = testingWrite;
+}
